@@ -1,0 +1,13 @@
+{
+  "name": "sg-tooltip",
+  "repo": "davidtsuji/sg-tooltip",
+  "description": "a simple pure css tooltip",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "styles": [
+    "sg-tooltip.css"
+  ]
+}
