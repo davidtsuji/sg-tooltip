@@ -1,12 +1,13 @@
+build:
+	@make install
+	@lessc sg-tooltip.less > sg-tooltip.css
+	@component build --dev > /dev/null
 
-build: components sg-tooltip.css
-	@lessc --yui-compress sg-tooltip.less > sg-tooltip.css
-	@component build --dev
+install:
+	@component install --dev > /dev/null
 
-components: component.json
-	@component install --dev
+demo:
+	@make build
+	@open demo/demo.html
 
-clean:
-	rm -fr build components template.js
-
-.PHONY: clean
+.PHONY: build install
